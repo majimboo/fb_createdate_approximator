@@ -138,7 +138,11 @@ func getApproxCreateYearAuthed(url string) ([]int, error) {
 func main() {
 	r := gin.Default()
 
-	r.GET("/:profile", func(c *gin.Context) {
+	r.GET("/", func(c *gin.Context) {
+		c.JSON(200, gin.H{"hello": "world"})
+	})
+
+	r.GET("/fb/:profile", func(c *gin.Context) {
 		profile := c.Param("profile")
 
 		fbid, err := getUserIDAuthed(profile)
