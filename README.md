@@ -1,12 +1,9 @@
 FB CreateDate Approximator
 ==========================
 
-This was created in relation to the issue where Filipinos found dummy accounts in their names.
-
-It even caught the attention of the national news. [Users report duplicate, dummy Facebook accounts in PH](https://www.rappler.com/nation/263121-users-report-duplicate-facebook-dummy-accounts-philippines)
+This was created in relation to the issue where Filipinos found dummy accounts in their names. It even caught the attention of the national news. [Users report duplicate, dummy Facebook accounts in PH](https://www.rappler.com/nation/263121-users-report-duplicate-facebook-dummy-accounts-philippines)
 
 The purpose of this script it to approximate when these dummy accounts were created to add context to them. 
-
 > are they old dummy accounts that doesn't have any connection to any of the current events?
 
 There are a few limitations to this though:
