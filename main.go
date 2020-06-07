@@ -147,7 +147,8 @@ func main() {
 
 		fbid, err := getUserIDAuthed(profile)
 		if err != nil {
-			panic(err)
+			c.JSON(400, gin.H{"error": err.Error()})
+			return
 		}
 
 		yearList := make(map[int][]int)
