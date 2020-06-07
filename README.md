@@ -5,14 +5,16 @@ This was created in relation to the issue where Filipinos found dummy accounts i
 
 It even caught the attention of the national news. [Users report duplicate, dummy Facebook accounts in PH](https://www.rappler.com/nation/263121-users-report-duplicate-facebook-dummy-accounts-philippines)
 
-The purpose of this script it to approximate when these dummy accounts were created to add context to them.
+The purpose of this script it to approximate when these dummy accounts were created to add context to them. 
+
+> are they old dummy accounts that doesn't have any connection to any of the current events?
 
 There are a few limitations to this though:
 
 ### Authentication
 
 In order to parse information from facebook properly one must be authenticated on facebook.
-I didn't want people to supply their username and passwords so I decided to resort to using cookies. I understand that it isn't better or more secure but at-least only those who actually knows what their doing can use the script.
+I didn't want people to supply their username and passwords so I decided to resort to using cookies. I understand that it isn't better or more secure but at least only those who actually knows what their doing can use the script.
 
 ### Usage Limits
 
@@ -27,7 +29,7 @@ How it works?
 =============
 Facebook uses mysql and with any sql data store we know that most id columns are auto incremented. Basically, facebook user ids are sequencial. With that in mind we deduce that the user with user ids before your user id was created before your account, and users with users ids after your user id was created after yours. 
 
-It also helps to confirm that the first account on facebook was of Mark Zuckerberg with the user id of 4. 1 to 3 might have been test accounts. But going to www.facebook.com/4 will redirect your to Mark's account.
+It also helps to confirm that the first account on facebook was of Mark Zuckerberg with the user id of 4. 1 to 3 might have been test accounts. But going to *www.facebook.com/4* will redirect you to Mark's account.
 
 How to use it?
 ==============
@@ -36,7 +38,7 @@ How to use it?
 - Run the `webservice.exe` executable. This will run a web server at port 8080. 
 - On your browser go to `http://localhost:8080/fb/fb_username_or_ID`, example: [http://localhost:8080/fb/madziikoy](http://localhost:8080/fb/madziikoy) and wait for awhile and it should return the year the account was created. 
 
-There is a lot of room for improvement but I did this in a hurry so this is what it is. Feel free to fork and improve. (I only had less than an hour to do this)
+There is a lot of room for improvement but I only had an hour to do this. Feel free to fork and improve.
 
 ### Where to find cookies?
 
@@ -44,7 +46,7 @@ Open your devtools on network tab and refresh your facebook page. Get the cookie
 
 ![cookies](https://i.imgur.com/idQsakb.png)
 
-Copy all the cookies and paste into the `cookie.txt` file before you run `webservice.exe`.
+Copy all the cookies and paste it into the `cookie.txt` file before you run `webservice.exe`.
 
 Disclaimer
 ==========
