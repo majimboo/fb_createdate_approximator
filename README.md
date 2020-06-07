@@ -28,6 +28,8 @@ Facebook uses mysql and with any sql data store we know that most id columns are
 
 It also helps to confirm that the first account on facebook was of Mark Zuckerberg with the user id of 4. 1 to 3 might have been test accounts. But going to *www.facebook.com/4* will redirect you to Mark's account.
 
+Since the dummy accounts in question doesn't have any content it is impossible to know the create date so we rely on its neighbors or the users close to its user ids.
+
 How to use it?
 ==============
 - Just download this repo
