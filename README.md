@@ -36,7 +36,7 @@ How to use it?
 - Run the `webservice.exe` executable. This will run a web server at port 8080. 
 - On your browser go to `http://localhost:8080/fb/fb_username_or_ID`, example: [http://localhost:8080/fb/madziikoy](http://localhost:8080/fb/madziikoy) and wait for awhile and it should return the year the account was created. 
 
-There is a lot of room for improvement but I did this in a hurry so this is what it is. Feel free to fork and improve.
+There is a lot of room for improvement but I did this in a hurry so this is what it is. Feel free to fork and improve. (I only had less than an hour to do this)
 
 ### Where to find cookies?
 
