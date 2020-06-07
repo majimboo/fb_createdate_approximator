@@ -9,16 +9,16 @@ The purpose of this script it to approximate when these dummy accounts were crea
 
 There are a few limitations to this though:
 
-# Authentication
+## Authentication
 
 In order to parse information from facebook properly one must be authenticated on facebook.
 I didn't want people to supply their username and passwords so I decided to resort to using cookies. I understand that it isn't better or more secure but at-least only those who actually knows what their doing can use the script.
 
-# Usage Limits
+## Usage Limits
 
 Facebook spam blocks you for a few minutes when doing a lot of requests even via the frontend so use this scarcely.
 
-# Approximation Only
+## Approximation Only
 
 Since we cannot actually find out when an account is created we can only approximate. One of the ways to do this is to find the earliest activity on that account. First post? first profile picture?
 
